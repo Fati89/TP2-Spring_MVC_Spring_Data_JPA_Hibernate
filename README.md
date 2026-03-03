@@ -23,11 +23,15 @@
 # 6. Créer le contrôleur spring MVC et les vues thymeleaf pour 
 ## 6.1. Affichier la liste des produits
 <img width="677" height="230" alt="image" src="https://github.com/user-attachments/assets/257db0e6-ed37-421a-80ef-0ea3fe1f3688" />
+<img width="866" height="614" alt="image" src="https://github.com/user-attachments/assets/0f53189a-4727-4d52-a5d3-3427fd379da8" />
 
 
 ## 6.2. Supprimer un produit
-## 6.3. Page template basée sur Thymeleaf layout et bootstrap
-## 6.4. Saisir et ajouter un produit avec la validation du formulaire
+<img width="604" height="671" alt="image" src="https://github.com/user-attachments/assets/9c616278-0608-4433-b357-ed21efddb9b5" />
+<img width="470" height="135" alt="image" src="https://github.com/user-attachments/assets/f1a03167-0f57-4482-96c8-8ec0b1430d34" />
+
+
+## 6.3. Saisir et ajouter un produit avec la validation du formulaire
 # 7. Sécuriser l'application avec Spring Security
 # 8. Ajouter d'autres fonctionalités supplémentaires :
 ## 8.1. Recherche des produits
