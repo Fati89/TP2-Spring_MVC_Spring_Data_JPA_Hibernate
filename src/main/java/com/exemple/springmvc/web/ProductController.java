@@ -1,0 +1,24 @@
+package com.exemple.springmvc.web;
+
+
+import com.exemple.springmvc.entities.Product;
+import com.exemple.springmvc.repository.ProductRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import java.util.List;
+
+@Controller
+public class ProductController {
+
+    @Autowired
+    private ProductRepository productRepository;
+    @GetMapping("/index") // "Quand quelqu’un fait une requête GET sur cette URL, exécute cette méthode."
+    public String index(Model model){
+        List<Product> products = productRepository.findAll();
+        model.addAttribute("productList", products);
+        return "products";
+    }
+}
