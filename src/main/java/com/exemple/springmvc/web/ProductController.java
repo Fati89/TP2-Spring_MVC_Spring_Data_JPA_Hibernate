@@ -20,28 +20,38 @@ public class ProductController {
     @Autowired
     private ProductRepository productRepository;
 
-    @GetMapping("/index") // "Quand quelqu’un fait une requête GET sur cette URL, exécute cette méthode."
+    @GetMapping("/user/index") // "Quand quelqu’un fait une requête GET sur cette URL, exécute cette méthode."
     public String index(Model model){
         List<Product> products = productRepository.findAll();
         model.addAttribute("productList", products);
         return "products"; // page products.html
     }
 
-    @GetMapping("/delete")
-    public String delete(@RequestParam(name = "id") Long id){ // cherche dans les parmetre de l'URL un parametre qui s'appel id et et tu l'affect a la variable Long id
-        productRepository.deleteById(id);
-        return "redirect:/index";
+    @GetMapping("/")
+    public String home(){
+        return "redirect:/user/index";
     }
 
-    @GetMapping("/newProduct")
+    @GetMapping("/admin/delete")
+    public String delete(@RequestParam(name = "id") Long id){ // cherche dans les parmetre de l'URL un parametre qui s'appel id et et tu l'affect a la variable Long id
+        productRepository.deleteById(id);
+        return "redirect:/user/index";
+    }
+
+    @GetMapping("/admin/newProduct")
     public String newProduct(Model model){
         model.addAttribute("product", new Product());
         return "new-product";
     }
-    @PostMapping("/saveProduct")
+    @PostMapping("/admin/saveProduct")
     public String saveProduct(@Valid Product product, BindingResult bindingResult, Model model){ // apres save il fait la validation, s'il y a des erreurs il vas les stocker dans bindingResult, model pour stocker automatiquement
         if(bindingResult.hasErrors()) return "new-product";
         productRepository.save(product);
-        return "redirect:/index";
+        return "redirect:/user/index";
+    }
+
+    @GetMapping("/notAuthorized")
+    public String notAuthorized(){
+        return "notAuthorized";
     }
 }

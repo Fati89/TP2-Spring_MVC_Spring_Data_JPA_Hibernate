@@ -11,7 +11,8 @@ import org.springframework.context.annotation.Bean;
 
 import java.security.Security;
 
-@SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
+// @SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
+@SpringBootApplication
 public class TP2 {
 
     public static void main(String[] args) {
