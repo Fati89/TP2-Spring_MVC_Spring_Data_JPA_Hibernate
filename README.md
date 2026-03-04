@@ -49,9 +49,19 @@ Ajout sans problème
 <img width="637" height="291" alt="image" src="https://github.com/user-attachments/assets/0c941c55-9300-4077-a2de-6f0ca0e563fd" />
 
 
-
-
 # 7. Sécuriser l'application avec Spring Security
+Les dépendances
+<img width="474" height="91" alt="image" src="https://github.com/user-attachments/assets/64562563-9143-46c6-b193-af07c1598182" />
+<img width="505" height="94" alt="image" src="https://github.com/user-attachments/assets/94a54c53-5821-4320-a0fb-dc77a11ff68a" />
+
+Activer la Sécurité
+<img width="1286" height="252" alt="image" src="https://github.com/user-attachments/assets/da3de386-0f89-47d9-86a2-da4d2f30bbd2" />
+
+Personnaliser la configuration par défaut
+<img width="1187" height="582" alt="image" src="https://github.com/user-attachments/assets/997369b3-5c0e-4dfc-ba1f-4cfa40e3dde1" />
+<img width="643" height="63" alt="image" src="https://github.com/user-attachments/assets/2dab000c-937d-469b-a7b5-49ff06ca3f69" />
+
+
 # 8. Ajouter d'autres fonctionalités supplémentaires :
 ## 8.1. Recherche des produits
 ## 8.2. Edition et mise à jour d'un produit
