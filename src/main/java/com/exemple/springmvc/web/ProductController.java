@@ -8,9 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -21,9 +19,16 @@ public class ProductController {
     private ProductRepository productRepository;
 
     @GetMapping("/user/index") // "Quand quelqu’un fait une requête GET sur cette URL, exécute cette méthode."
-    public String index(Model model){
-        List<Product> products = productRepository.findAll();
+    public String index(Model model, @RequestParam(name = "keyword", defaultValue = "") String keyword){
+        List<Product> products;
+        if (keyword.isEmpty()) {
+            products = productRepository.findAll();
+        } else {
+            products = productRepository.findByNameContainingIgnoreCase(keyword);
+        }
         model.addAttribute("productList", products);
+        model.addAttribute("keyword", keyword);
+
         return "products"; // page products.html
     }
 
@@ -37,6 +42,20 @@ public class ProductController {
         productRepository.deleteById(id);
         return "redirect:/user/index";
     }
+
+    @GetMapping("/admin/editProduct")
+    public String editProduct(@RequestParam(name = "id") Long id, Model model){
+        Product p = productRepository.findById(id).orElse(null);
+        model.addAttribute("product", p);
+        return "edit-product";
+    }
+
+    @PostMapping("/admin/saveEditedProduct")
+    public String saveEditedProduct(Product product){
+        productRepository.save(product);
+        return "redirect:/user/index";
+    }
+
 
     @GetMapping("/admin/newProduct")
     public String newProduct(Model model){
