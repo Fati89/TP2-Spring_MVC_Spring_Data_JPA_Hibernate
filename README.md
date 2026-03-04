@@ -32,6 +32,25 @@
 
 
 ## 6.3. Saisir et ajouter un produit avec la validation du formulaire
+Boutton d'ajout
+<img width="600" height="67" alt="image" src="https://github.com/user-attachments/assets/50e40bdc-97d4-4c34-b526-71eca0040571" />
+Form HTML
+<img width="658" height="400" alt="image" src="https://github.com/user-attachments/assets/e2b1760e-3f1b-4fe2-885a-a3f2d6d528a5" />
+Actions de controller
+<img width="755" height="291" alt="image" src="https://github.com/user-attachments/assets/5ff58c1e-4208-4502-8714-8db5aea20af1" />
+
+
+Validation
+<img width="568" height="205" alt="image" src="https://github.com/user-attachments/assets/39fb238c-192c-4101-a1ce-2e0552b3f30b" />
+
+Ajout sans problème
+
+<img width="304" height="223" alt="image" src="https://github.com/user-attachments/assets/fb8c6024-2805-4928-ae1a-15fca069fd24" />
+<img width="637" height="291" alt="image" src="https://github.com/user-attachments/assets/0c941c55-9300-4077-a2de-6f0ca0e563fd" />
+
+
+
+
 # 7. Sécuriser l'application avec Spring Security
 # 8. Ajouter d'autres fonctionalités supplémentaires :
 ## 8.1. Recherche des produits
