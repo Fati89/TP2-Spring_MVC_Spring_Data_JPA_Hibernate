@@ -16,9 +16,6 @@
 
 # 5. Désactiver la protection par défaut de spring security
 <img width="548" height="59" alt="image" src="https://github.com/user-attachments/assets/1efc730a-76eb-413d-91bf-7958cdadc3de" />
-<img width="397" height="161" alt="image" src="https://github.com/user-attachments/assets/a57b7f47-7a50-4229-9f7d-35ed78fc5332" />
-<img width="742" height="456" alt="image" src="https://github.com/user-attachments/assets/63d3204c-5600-4a5c-8760-f0f8648afa08" />
-
 
 # 6. Créer le contrôleur spring MVC et les vues thymeleaf pour 
 ## 6.1. Affichier la liste des produits
