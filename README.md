@@ -64,5 +64,20 @@ Personnaliser la configuration par défaut
 
 # 8. Ajouter d'autres fonctionalités supplémentaires :
 ## 8.1. Recherche des produits
+<img width="987" height="185" alt="image" src="https://github.com/user-attachments/assets/ce621018-6e30-4879-9691-66b70f5f179e" />
+
+<img width="750" height="73" alt="image" src="https://github.com/user-attachments/assets/186cd30b-93f1-4e63-92ab-67d455735ad7" />
+
+<img width="938" height="303" alt="image" src="https://github.com/user-attachments/assets/ce89ed16-052b-41af-b16a-1243b308f524" />
+
+<img width="658" height="182" alt="image" src="https://github.com/user-attachments/assets/79b5ed67-1ab4-4433-b215-706828b928d9" />
+
 ## 8.2. Edition et mise à jour d'un produit
-## 8.3. Autres fonctionnalités de votre choix
+form edit
+<img width="820" height="469" alt="image" src="https://github.com/user-attachments/assets/472c854f-566e-42d1-9d0d-180e3287bcb7" />
+
+methodes de controlleur
+<img width="649" height="282" alt="image" src="https://github.com/user-attachments/assets/269c073f-26db-4c00-a46a-96df65b91894" />
+
+<img width="657" height="228" alt="image" src="https://github.com/user-attachments/assets/d255a4ac-813a-41ac-b035-0447aaeee0fc" />
+
