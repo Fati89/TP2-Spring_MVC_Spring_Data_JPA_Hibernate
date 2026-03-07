@@ -16,9 +16,6 @@
 
 # 5. Désactiver la protection par défaut de spring security
 <img width="548" height="59" alt="image" src="https://github.com/user-attachments/assets/1efc730a-76eb-413d-91bf-7958cdadc3de" />
-<img width="397" height="161" alt="image" src="https://github.com/user-attachments/assets/a57b7f47-7a50-4229-9f7d-35ed78fc5332" />
-<img width="742" height="456" alt="image" src="https://github.com/user-attachments/assets/63d3204c-5600-4a5c-8760-f0f8648afa08" />
-
 
 # 6. Créer le contrôleur spring MVC et les vues thymeleaf pour 
 ## 6.1. Affichier la liste des produits
@@ -30,17 +27,34 @@
 <img width="604" height="671" alt="image" src="https://github.com/user-attachments/assets/9c616278-0608-4433-b357-ed21efddb9b5" />
 <img width="470" height="135" alt="image" src="https://github.com/user-attachments/assets/f1a03167-0f57-4482-96c8-8ec0b1430d34" />
 
+## 6.3. Page template basée sur Thymeleaf layout et bootstrap
+layout.html
 
-## 6.3. Saisir et ajouter un produit avec la validation du formulaire
+<img width="804" height="476" alt="image" src="https://github.com/user-attachments/assets/3b85dc7e-f79a-48ce-9a69-74efd01554ac" />
+
+fragment:content1
+
+<img width="791" height="310" alt="image" src="https://github.com/user-attachments/assets/84614e75-d1e2-432c-8d77-7c141b899da3" />
+
+<img width="1226" height="347" alt="image" src="https://github.com/user-attachments/assets/37da15f3-0085-4984-a3de-37936a9ba271" />
+
+
+## 6.4. Saisir et ajouter un produit avec la validation du formulaire
 Boutton d'ajout
+
 <img width="600" height="67" alt="image" src="https://github.com/user-attachments/assets/50e40bdc-97d4-4c34-b526-71eca0040571" />
+
 Form HTML
+
 <img width="658" height="400" alt="image" src="https://github.com/user-attachments/assets/e2b1760e-3f1b-4fe2-885a-a3f2d6d528a5" />
+
 Actions de controller
+
 <img width="755" height="291" alt="image" src="https://github.com/user-attachments/assets/5ff58c1e-4208-4502-8714-8db5aea20af1" />
 
 
 Validation
+
 <img width="568" height="205" alt="image" src="https://github.com/user-attachments/assets/39fb238c-192c-4101-a1ce-2e0552b3f30b" />
 
 Ajout sans problème
@@ -51,13 +65,16 @@ Ajout sans problème
 
 # 7. Sécuriser l'application avec Spring Security
 Les dépendances
+
 <img width="474" height="91" alt="image" src="https://github.com/user-attachments/assets/64562563-9143-46c6-b193-af07c1598182" />
 <img width="505" height="94" alt="image" src="https://github.com/user-attachments/assets/94a54c53-5821-4320-a0fb-dc77a11ff68a" />
 
 Activer la Sécurité
+
 <img width="1286" height="252" alt="image" src="https://github.com/user-attachments/assets/da3de386-0f89-47d9-86a2-da4d2f30bbd2" />
 
 Personnaliser la configuration par défaut
+
 <img width="1187" height="582" alt="image" src="https://github.com/user-attachments/assets/997369b3-5c0e-4dfc-ba1f-4cfa40e3dde1" />
 <img width="643" height="63" alt="image" src="https://github.com/user-attachments/assets/2dab000c-937d-469b-a7b5-49ff06ca3f69" />
 
@@ -74,9 +91,11 @@ Personnaliser la configuration par défaut
 
 ## 8.2. Edition et mise à jour d'un produit
 form edit
+
 <img width="820" height="469" alt="image" src="https://github.com/user-attachments/assets/472c854f-566e-42d1-9d0d-180e3287bcb7" />
 
 methodes de controlleur
+
 <img width="649" height="282" alt="image" src="https://github.com/user-attachments/assets/269c073f-26db-4c00-a46a-96df65b91894" />
 
 <img width="657" height="228" alt="image" src="https://github.com/user-attachments/assets/d255a4ac-813a-41ac-b035-0447aaeee0fc" />
