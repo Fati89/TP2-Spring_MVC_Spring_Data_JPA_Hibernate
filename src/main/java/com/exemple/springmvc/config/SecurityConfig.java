@@ -29,10 +29,11 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
         return http
-                .formLogin(Customizer.withDefaults()) // si un user n'est pas authentifier , authentifie le avec ton propre form de login
+                // .formLogin(Customizer.withDefaults()) // si un user n'est pas authentifier , authentifie le avec ton propre form de login
+                .formLogin(fl->fl.loginPage("/login").permitAll())
                 .authorizeHttpRequests(ar->ar.requestMatchers("/user/**").hasRole("USER")) // tout ce qui est /index necessit d'etre authentifier avec le role USER
                 .authorizeHttpRequests(ar->ar.requestMatchers("/admin/**", "/delete/**").hasRole("ADMIN"))
-                .authorizeHttpRequests(ar->ar.requestMatchers("/public/**").permitAll())
+                .authorizeHttpRequests(ar->ar.requestMatchers("/public/**","/webjars/**").permitAll())
                 .authorizeHttpRequests(ar->ar.anyRequest().authenticated()) // toutes les requets necessitent une authentification
                 .exceptionHandling(eh->eh.accessDeniedPage("/notAuthorized"))
                 .build();

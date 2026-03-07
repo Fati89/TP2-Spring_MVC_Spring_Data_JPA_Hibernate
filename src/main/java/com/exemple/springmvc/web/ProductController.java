@@ -3,6 +3,7 @@ package com.exemple.springmvc.web;
 
 import com.exemple.springmvc.entities.Product;
 import com.exemple.springmvc.repository.ProductRepository;
+import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -72,5 +73,15 @@ public class ProductController {
     @GetMapping("/notAuthorized")
     public String notAuthorized(){
         return "notAuthorized";
+    }
+
+    @GetMapping("/login")
+    public String login(){
+        return "login";
+    }
+    @GetMapping("/logout")
+    public String logout(HttpSession session){
+        session.invalidate();
+        return "login";
     }
 }
