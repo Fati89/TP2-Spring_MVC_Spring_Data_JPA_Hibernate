@@ -100,3 +100,19 @@ methodes de controlleur
 
 <img width="657" height="228" alt="image" src="https://github.com/user-attachments/assets/d255a4ac-813a-41ac-b035-0447aaeee0fc" />
 
+## 8.3 Page login
+
+login.html
+
+<img width="846" height="593" alt="image" src="https://github.com/user-attachments/assets/0e3d9024-8a73-47ee-be41-80a47bf9a768" />
+
+actions de controlleur
+
+<img width="526" height="256" alt="image" src="https://github.com/user-attachments/assets/2a46a21a-14db-40a2-818e-7b36f41a56d8" />
+
+SecurityConfig
+
+<img width="1128" height="275" alt="image" src="https://github.com/user-attachments/assets/77617788-db24-44e9-aebd-a987f412dc1b" />
+
+<img width="1361" height="393" alt="image" src="https://github.com/user-attachments/assets/9ff706f2-4040-4f68-b6bf-659ade588364" />
+
